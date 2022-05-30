@@ -17,7 +17,7 @@ console.log(functionOne(4));
 
 
 /**
- * Fionacci
+ * Fibonacci récursif
  */
 
 const fibonacci = (n) => {
@@ -28,6 +28,29 @@ const fibonacci = (n) => {
 return n;
 }
 console.log(fibonacci(4));
+
+
+/**
+ * Fibonacci version itératif
+ */
+
+const fibo = (n) =>{
+
+    if(n<2){
+        return n;
+    }
+     let x=0;
+     let y=1;
+     let z;
+
+     for( let i=1; i<n; i++){
+         z=x+y;
+         x=y;
+         y=z;
+     }
+    return z; 
+}
+console.log(fibo(100));
 
 
 /**
@@ -92,3 +115,4 @@ const pgcd = (a, b) => {
 
 }
 console.log(pgcd(10,2));
+
