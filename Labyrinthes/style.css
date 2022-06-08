@@ -1,8 +1,9 @@
-:root{
-    --maze-width:3;
-    --maze-ex:"ex-0";
+:root {
+    --maze-width: 3;
+    --maze-ex: "ex-0";
 }
-#base{
+
+#base {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(var(--maze-width), 50px);
@@ -12,9 +13,9 @@
     grid-gap: 0;
 }
 
-#base > .little {
+#base>.little {
     background-color: black;
     height: 50px;
     width: 50px;
-    border: solid 1px transparent;
+    border: solid 2px transparent;
 }
